@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.heading').text('Jquery Effects');
+            $('.heading').css("color","red");
+            $('#header').click(function(){
+                $('h1').toggle(1);
+            });
+        });
+
+        $(document).ready(function(){
+            $('.bhaskar').text('Hey This is bhaskar');
+            $(".bhaskar").css("color","black");
+            $(".bhaskar").css("font-size","80px");
+            $('body').css("background-color","yellow");
+            $('.bhaskar').css("background-color","red");
+
+        })
+    </script>
+    
+</head>
+<body>
+    <h1 class="heading"></h1>
+    <h1 class="bhaskar"></h1>
+    <button id="header">Show And Hide</button>
+
+    <script>
+        $('.heading').text('JQuery is Awesome');
+        $('.bhaskar').text('JQuery Class');
+
+
+    </script>
+</body>
+</html>
